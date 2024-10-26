@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: #ffffff; /* Texto claro */
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-box {
+    background-color: #1e1e1e; /* Caixa do chat mais clara que o fundo */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 500px; /* Aumentando a largura */
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 400px; /* Aumentando a altura */
+}
+
+.messages {
+    padding: 20px;
+    height: calc(100% - 80px); /* Ajustando a altura para caber com o input e o botão */
+    overflow-y: auto;
+    border-bottom: 1px solid #333;
+}
+
+.messages p {
+    margin: 5px 0;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.welcome-message {
+    font-weight: bold;
+    color: #00bcd4; /* Cor mais vibrante para a mensagem de boas-vindas */
+}
+
+.messages p.user {
+    background-color: #007bff; /* Mensagens do usuário em azul */
+    color: white;
+    text-align: right;
+}
+
+input[type="text"] {
+    width: calc(95.5%);
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    margin: 10px 0;
+    background-color: #333; /* Campo de entrada escuro */
+    color: white; /* Texto claro */
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #00bcd4; /* Botão em azul vibrante */
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0097a7; /* Cor do botão ao passar o mouse */
+}

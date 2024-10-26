@@ -17,11 +17,11 @@ body {
     background-color: #1e1e1e; /* Caixa do chat mais clara que o fundo */
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    width: 500px; /* Aumentando a largura */
+    width: 90%; /* Aumentando a largura */
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    height: 400px; /* Aumentando a altura */
+    height: 80%; /* Aumentando a altura */
 }
 
 .messages {
@@ -49,7 +49,7 @@ body {
 }
 
 input[type="text"] {
-    width: calc(95.5%);
+    width: calc(97.8%);
     padding: 10px;
     border: 1px solid #444;
     border-radius: 4px;
@@ -70,4 +70,10 @@ button {
 
 button:hover {
     background-color: #0097a7; /* Cor do botão ao passar o mouse */
+}
+
+.format-message{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
